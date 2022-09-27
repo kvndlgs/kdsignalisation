@@ -1,6 +1,5 @@
 import Navbar from "./nav"
 import Facebook from './facebook'
-import { HiOutlineMail, HiOutlinePhone } from "react-icons/hi"
 import Head from 'next/head'
 
 export default function Layout({ children }) {
