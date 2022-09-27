@@ -1,7 +1,9 @@
+import Layout from '../components/layout
+'
 export default function About(){
     return (
-        <div>
-            about
-        </div>
+        <Layout>
+            <h1>ABOUT</h1>
+        </Layout>
     )
 }
