@@ -5,9 +5,9 @@ import {HiChevronDown,  HiArrowsExpand, HiCalendar, HiChartBar, HiCursorClick, H
 import Logo from '../components/logo'
 
 const navigation = [
-    { name: 'A propos', href: 'about', current: false },
-    { name: 'Carriere', href: 'job', current: false },
-    { name: 'Nous joindre', href: 'contact', current: false },
+    { name: 'A propos', href: '/about', current: false },
+    { name: 'Carrière', href: '/job', current: false },
+    { name: 'Nous joindre', href: '/contact', current: false },
 ]
 
 function classNames(...classes) {
@@ -63,17 +63,17 @@ export default function Navbar() {
                               <div className="overflow-hidden shadow-lg">
                                 <div className=" text-white  font-semibold bg-dark-200 tracking-wider rounded-t-md grid items-center justify-center gap-6 px-4 py-0 mt-4 sm:gap-8 sm:p-2">
                                 <a href='#' className='space-y-6 px-5 py-5 sm:flex sm:space-y-0 sm:space-x-8'>
-                                Signalisation routiere
+                                Signalisation routière
                                 </a>
                                 </div>
                                 <div className="relative text-white font-semibold tracking-wider bg-dark-200 items-center justify-center  grid gap-6 px-5 py-0  border-b-2 border-t-2 sm:gap-8 sm:p-2">
                                 <a href='#' className='space-y-6 px-5 py-5 sm:flex sm:space-y-0 sm:space-x-8'>
-                                Vehicule d'accompanement
+                                Véhicule d'accompanement
                                 </a>
                                 </div>
                                 <div className="relative text-white font-semibold bg-dark-200 tracking-wider rounded-b-md items-center justify-center  grid gap-6 px-5 py-0 border-t-1 sm:gap-8 sm:p-2">
                                 <a href='#' className='space-y-6 px-5 py-5 sm:flex sm:space-y-0 sm:space-x-8'>
-                                Location d'equipements
+                                Location d'équipements
                                 </a>
                                 </div>
                                

@@ -14,7 +14,7 @@ export default function Footer() {
             >
               <div class="col-span-2">
                 <div>
-                  <h2 class="text-2xl font-medium text-white">Inscrivez vous a notre bulletin d'info!</h2>
+                  <h2 class="text-2xl font-medium text-white">Abonnez-vous à notre bulletin d'info!</h2>
                 </div>
               </div>
       
@@ -24,7 +24,7 @@ export default function Footer() {
       
                   <div class="p-2 sm:flex sm:items-center bg-white rounded">
                     <input
-                      class="w-full h-12 p-3 font-medium tracking-widest placeholder-light bg-transparent border-none"
+                      class="w-full h-12 p-3 rounded font-medium text-sm placeholder-dark text-dark-400 bg-transparent border-none focus:outline-none"
                       type="email"
                       id="email"
                       placeholder="Entrez votre addresse courriel"
@@ -41,57 +41,57 @@ export default function Footer() {
               </div>
       
               <div class="col-span-2 pt-6 border-t sm:col-span-1 border-white/10">
-                <p class="font-bold text-white">Nos services</p>
+                <p class="font-bold text-dark-100">Nos services</p>
       
-                <nav class="flex flex-col mt-6 space-y-4 text-sm text-white">
-                  <a class="inline-block" href=""> Signalisation Routiere </a>
-                  <a class="inline-block" href=""> Vehicule d'accompagnement </a>
-                  <a class="inline-block" href=""> Location d'equipement (bientot) </a>
+                <nav class="flex flex-col mt-6 space-y-4 text-sm text-dark-50">
+                  <a class="inline-block" href=""> Signalisation Routière </a>
+                  <a class="inline-block" href=""> Véhicule d'accompagnement </a>
+                  <a class="inline-block" href=""> Location d'équipements (bientot) </a>
                 </nav>
               </div>
       
               <div class="col-span-2 pt-6 border-t sm:col-span-1 border-white/10">
-                <p class="font-bold text-white">L'entreprise</p>
-      
-                <nav class="flex flex-col mt-6 space-y-4 text-sm text-white">
-                  <a class="inline-block" href=""> Qui sommes-nous ? </a>
-                  <a class="inline-block" href=""> L'equipe </a>
-                  <a class="inline-block" href=""> Carriere </a>
-                </nav>
-              </div>
-      
-              <div class="col-span-2 pt-6 border-t sm:col-span-1 border-white/10">
-                <p class="font-bold text-dark-200">Liens utiles</p>
+                <p class="font-bold text-dark-100">L'entreprise</p>
       
                 <nav class="flex flex-col mt-6 space-y-4 text-sm text-dark-50 font-semibold">
-                  <a class="inline-block" href=""> Nous joindre </a>
-                  <a class="inline-block" href=""> FAQs </a>
-                  <a class="inline-block" href=""> Clavarder </a>
+                  <a class="inline-block" href="/about"> Qui sommes-nous ? </a>
+                  <a class="inline-block" href="/about/team"> L'équipe </a>
+                  <a class="inline-block" href="/job"> Carrière </a>
                 </nav>
               </div>
       
               <div class="col-span-2 pt-6 border-t sm:col-span-1 border-white/10">
-                <p class="font-bold text-light-50">Client</p>
+                <p class="font-bold text-dark-100">Liens utiles</p>
       
-                <nav class="flex flex-col mt-6 space-y-4 text-sm font-semibold text-dark-200">
+                <nav class="flex flex-col mt-6 space-y-4 text-sm text-dark-50 font-semibold">
+                  <a class="inline-block" href="/contact"> Nous joindre </a>
+                  <a class="inline-block" href="#"> FAQs </a>
+                  <a class="inline-block" href="#"> Clavarder </a>
+                </nav>
+              </div>
+      
+              <div class="col-span-2 pt-6 border-t sm:col-span-1 border-white/10">
+                <p class="font-bold text-dark-100">Client</p>
+      
+                <nav class="flex flex-col mt-6 space-y-4 text-sm font-semibold text-dark-50">
                   <a class="inline-block" href="">Connexion</a>
                   <a class="inline-block" href="">Inscription</a>
                 </nav>
               </div>
       
               <div class="flex col-span-2 gap-5 text-dark-100 lg:col-span-5">
-                <a class="hover:opacity-75" href="" target="_blank" rel="noreferrer">
+                <a class="hover:opacity-75" href="https://www.facebook.com/profile.php?id=100086453343364" target="_blank" rel="noreferrer">
                   <span class="sr-only"> Facebook </span>
                   <Icon.RiFacebookCircleFill className='text-2xl' />
                 </a>
       
-                <a class="hover:opacity-75" href="" target="_blank" rel="noreferrer">
+                <a class="hover:opacity-75" href="#" target="_blank" rel="noreferrer">
                   <span class="sr-only"> Linkedin </span>
       
                  <Icon.RiLinkedinFill  className='text-2xl' />
                 </a>
       
-                <a class="hover:opacity-75" href="" target="_blank" rel="noreferrer">
+                <a class="hover:opacity-75" href="#" target="_blank" rel="noreferrer">
                   <span class="sr-only"> Twitter </span>
                   <Icon.RiTwitterFill className='text-2xl' />
                 </a>
