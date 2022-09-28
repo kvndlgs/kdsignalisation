@@ -1,7 +1,8 @@
+import Layout from '../components/layout'
 export default function Job(){
     return (
-        <div>
-            Job
-        </div>
+        <Layout>
+            Carriere
+        </Layout>
     )
 }
