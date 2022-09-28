@@ -6,7 +6,7 @@ import Logo from '../components/logo'
 
 const navigation = [
     { name: 'A propos', href: '/about', current: false },
-    { name: 'Carrière', href: '/job', current: false },
+    { name: 'Carrières', href: '/job', current: false },
     { name: 'Nous joindre', href: '/contact', current: false },
 ]
 
