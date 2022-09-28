@@ -3,14 +3,12 @@ import Layout from '../components/layout'
 import NestedLayout from '../components/nested-layout'
 
 export default function Page(){
-  return {
-
-  }
+  return {}
 }
 
 Page.getLayout = function getLayout(page){
   return (
-    <Layout>
+    <Layout title='Accueil'>
       <NestedLayout> {page} </NestedLayout>
     </Layout>
   )

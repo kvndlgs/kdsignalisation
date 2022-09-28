@@ -2,7 +2,7 @@ import Layout from '../components/layout'
 
 export default function About(){
     return (
-        <Layout>
+        <Layout hasFooter title='À propos'>
             <div className='bg-white py-8 flex items-center justify-center'>
                 <div className='pb-[200px]'>
                 <h2 className='text-4xl font-semibold text-light-400'> Qui sommes-nous ? </h2>

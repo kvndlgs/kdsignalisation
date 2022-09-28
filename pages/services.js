@@ -1,7 +1,8 @@
+import Layout from '../components/layout'
 export default function Services(){
     return (
-        <div>
+        <Layout hasFooter title='Nos services'>
             Services
-        </div>
+        </Layout>
     )
 }
