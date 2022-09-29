@@ -34,6 +34,20 @@ module.exports = {
           '900': '#000000'
         },
       },
+      fontFamily: {
+        'main': "'MonumentExtended-Regular', sans-serif",
+        'ultra': "'MonumentExtended-Ultrabold', sans-serif",
+      },
+      fontSize: {
+        'sm': '12px',
+        'base': '18px',
+        '1xl': '1.25rem',
+        '2xl': '1.563rem',
+        '3xl': '1.953rem',
+        '4xl': '2.441rem',
+        '5xl': '3.052rem',
+        '6xl': '3.815rem'
+      }
     },
   },
   plugins: [],

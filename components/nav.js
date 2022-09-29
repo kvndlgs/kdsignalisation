@@ -1,5 +1,4 @@
-
-import { Fragment } from 'react'
+import { Fragment, useState } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import {HiChevronDown,  HiArrowsExpand, HiCalendar, HiChartBar, HiCursorClick, HiPlay,HiShieldCheck, HiChartSquareBar, HiBellIcon, HiX, HiMenuAlt3, HiMenu } from 'react-icons/hi'
 import Logo from '../components/logo'
@@ -21,15 +20,21 @@ function classNames(...classes) {
   }
 
 export default function Navbar() {
+  const [french, setFrench] = useState(false);
 
          return (
+          <>
+          <div className='w-full flex flex-row items-stretch justify-end px-[36px] py-[4.5px] font-main text-sm tracking-widest text-white bg-dark-400 leading-tight'>
+            <a href='#'></a>
+            <a href='#' className='hover:text-light-50'>{ french ? 'FR' : 'EN' }</a>
+          </div>
             <Popover className="relative bg-dark">
               <div className="mx-auto max-w-[1440px] px-4 sm:px-6">
                 <div className="flex items-center justify-between  py-4 md:justify-start md:space-x-14">
                   <div className="flex justify-start lg:w-0 lg:flex-1">
                     <a href="/">
                       <span className="sr-only">KD Signalisation</span>
-                      <Logo className='outline-none'/>
+                      <Logo className='outline-none ring-none'/>
                     </a>
                   </div>
                   <div className="-my-2 -mr-2 md:hidden">
@@ -165,6 +170,7 @@ export default function Navbar() {
                 </Popover.Panel>
               </Transition>
             </Popover>
+            </>
          )
           
         }
