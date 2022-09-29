@@ -14,7 +14,7 @@ export default function Footer() {
             >
               <div class="col-span-2">
                 <div>
-                  <h2 class="text-2xl font-main text-white leading-tight tracking-wide">Abonnez-vous à notre bulletin d'info!</h2>
+                  <h2 class="text-5xl font-ultra text-white leading-tight tracking-wide">Abonnez-vous à notre bulletin d'info!</h2>
                 </div>
               </div>
       
@@ -44,9 +44,9 @@ export default function Footer() {
                 <p class="font-main text-dark-300">Nos services</p>
       
                 <nav class="flex flex-col font-main mt-6 space-y-4 text-sm text-dark-50">
-                  <a class="inline-block" href=""> Signalisation Routière </a>
+                  <a class="inline-block" href="/signalisation"> Signalisation Routière </a>
                   <a class="inline-block" href=""> Véhicule d'accompagnement </a>
-                  <a class="inline-block" href=""> Location d'équipements (bientot) </a>
+                  <a class="inline-block" href="/location"> Location d'équipements (bientot) </a>
                 </nav>
               </div>
       
@@ -55,7 +55,7 @@ export default function Footer() {
       
                 <nav class="flex flex-col mt-6 space-y-4 text-sm text-dark-50 font-main">
                   <a class="inline-block" href="/about"> Qui sommes-nous ? </a>
-                  <a class="inline-block" href="/about/team"> L'équipe </a>
+                  <a class="inline-block" href="/about"> L'équipe </a>
                   <a class="inline-block" href="/job"> Carrière </a>
                 </nav>
               </div>

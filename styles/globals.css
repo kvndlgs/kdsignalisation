@@ -3,6 +3,29 @@
 @tailwind utilities;
 @tailwind variants;
 
+/*
+@font-face {
+    font-family: MonumentExtended-Regular;
+    src: url('/fonts/MonumentExtended-Regular.otf');
+}
+
+@font-face {
+    font-family: MonumentExtended-Ultrabold;
+    src: url('/fonts/MonumentExtended-Ultrabold.otf');
+}
+*/
+
+@font-face {
+    font-family: RightGrotesk-Black;
+    src: url('/fonts/RightGrotesk-Black.otf');
+}
+
+@font-face {
+    font-family: RightGrotesk-Regular;
+    src: url('/fonts/RightGrotesk-Regular.otf');
+}
+
+
 body {
     margin:0;
     padding:0;

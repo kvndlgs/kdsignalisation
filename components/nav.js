@@ -24,9 +24,9 @@ export default function Navbar() {
 
          return (
           <>
-          <div className='w-full flex flex-row items-stretch justify-end px-[36px] py-[4.5px] font-main text-sm tracking-widest text-white bg-dark-400 leading-tight'>
+          <div className='w-full flex flex-row items-stretch justify-end  py-[4.5px] font-main text-sm text-white bg-dark-400 leading-tight'>
             <a href='#'></a>
-            <a href='#' className='hover:text-light-50'>{ french ? 'FR' : 'EN' }</a>
+            <a href='#' className='hover:text-light-50 mr-6 text-[12px] tracking-widest'>{ french ? 'FR' : 'EN' }</a>
           </div>
             <Popover className="relative bg-dark">
               <div className="mx-auto max-w-[1440px] px-4 sm:px-6">
@@ -43,20 +43,16 @@ export default function Navbar() {
                       <HiMenu className="h-8 w-8" aria-hidden="true" />
                     </Popover.Button>
                   </div>
-                  <Popover.Group as="nav" className="hidden space-x-8  md:flex">
+                  <Popover.Group as="nav" className="hidden w-full space-x-12  md:flex md:justify-end">
                     <Popover className="relative">
                       {({ open }) => (
                         <>
                           <Popover.Button
-                            className='text-dark-50 hover:text-dark-200 group inline-flex items-center text-base'
-                           
+                            className='text-white hover:text-dark-200 group inline-flex items-center text-sm'
                           >
-                            <span className='text-dark-50 font-semibold'>Nos Services</span>
+                            <span className='font-main text-sm'>Nos services</span>
                             <HiChevronDown
-                              className={classNames(
-                                open ? 'text-dark-50' : 'text-dark-100',
-                                'mt-1 ml-1 h-6 w-6'
-                              )}
+                            className='text-[24px] mx-1'
                               aria-hidden="true"
                             />
                           </Popover.Button>
@@ -72,17 +68,17 @@ export default function Navbar() {
                           >
                             <Popover.Panel className="absolute z-10 -ml-4 mt-4 w-screen max-w-[330px] transform px-2 sm:px-0 lg:left-1/2 lg:ml-0 lg:-translate-x-[50%]">
                               <div className="overflow-hidden shadow-lg">
-                                <div className=" text-dark-50  font-semibold bg-dark hover:bg-dark-400 transition-all tracking-wider rounded-t-md grid items-center justify-center gap-6 px-4 py-0 mt-4 sm:gap-8 sm:p-2">
+                                <div className=" text-white  font-main text-sm bg-dark hover:bg-dark-400 transition-all tracking-wider rounded-t-md grid items-center justify-center gap-6 px-4 py-0 mt-4 sm:gap-8 sm:p-2">
                                 <a href='/signalisation' className='space-y-6 px-5 py-5 sm:flex sm:space-y-0 sm:space-x-8'>
                                 Signalisation routière
                                 </a>
                                 </div>
-                                <div className="relative text-dark-50 font-semibold tracking-wider bg-dark hover:bg-dark-400 transition-all items-center justify-center  grid gap-6 px-5 py-0  border-b-2 border-t-2 border-dark-50 sm:gap-8 sm:p-2">
+                                <div className="relative text-white font-main text-sm tracking-wider bg-dark hover:bg-dark-400 transition-all items-center justify-center  grid gap-6 px-5 py-0  border-b-2 border-t-2 border-dark-50 sm:gap-8 sm:p-2">
                                 <a href='#' className='space-y-6 px-5 py-5 sm:flex sm:space-y-0 sm:space-x-8'>
                                 Véhicule d'accompanement
                                 </a>
                                 </div>
-                                <div className="relative text-dark-50 font-semibold bg-dark hover:bg-dark-400 transition-all tracking-wider rounded-b-md items-center justify-center  grid gap-6 px-5 py-0 sm:gap-8 sm:p-2">
+                                <div className="relative text-white font-main text-sm bg-dark hover:bg-dark-400 transition-all tracking-wider rounded-b-md items-center justify-center  grid gap-6 px-5 py-0 sm:gap-8 sm:p-2">
                                 <a href='/location' className='space-y-6 px-5 py-5 sm:flex sm:space-y-0 sm:space-x-8'>
                                 Location d'équipements
                                 </a>
@@ -97,22 +93,23 @@ export default function Navbar() {
                     {
                       navigation.map((item) => {
                         return (
-                          <a className=' text-dark-50 hover:text-dark-200 font-semibold transition-all' href={item.href} key={item}> {item.name} </a>
+                          <a className=' text-white hover:text-dark-200 font-main text-sm transition-all flex items-center justify-center' href={item.href} key={item}> {item.name} </a>
                         )
                       })
                     }
                   
                   </Popover.Group>
-                  <div className="hidden items-center justify-center md:flex md:flex-1 lg:w-0">
+                  <div className="hidden items-center justify-end md:hidden">
                     <a
                       href="#"
-                      className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded border border-transparent bg-light-400 hover:bg-light transition-all px-5 py-3 text-base
-                      font-semibold tracking-wider
+                      className=" inline-flex items-center justify-center whitespace-nowrap rounded border 
+                      border-transparent text-sm bg-light-400 hover:bg-light transition-all px-5 py-4
+                      font-main tracking-wider
                       text-white shadow-sm"
                     >
                       Se connecter
                     </a>
-                    <a href='#' className='text-white px-8 font-medium'> S'inscrire </a>
+                    <a href='#' className='text-white px-8 font-main text-sm'> S'inscrire </a>
                   </div>
                 </div>
               </div>
@@ -146,7 +143,7 @@ export default function Navbar() {
                       <div className="grid grid-cols-2 gap-y-4 gap-x-15 text-white ">
                         { mobileNavigation.map((item)=> {
                             return (
-                                <a className='p-4 font-semibold text-dark-50 hover:text-dark-200 transition-all' href={item.href}
+                                <a className='p-4 font-main text-sm text-white hover:text-dark-200 transition-all' href={item.href}
                                    key={item}
                                    >{item.name}</a>
                             )
@@ -155,12 +152,12 @@ export default function Navbar() {
                       <div className='pt-6 border-t-2 border-dark-200'>
                         <a
                           href="#"
-                          className="flex w-full items-center justify-center rounded-md border border-transparent bg-light-400 hover:bg-light transition-all px-4 py-2 text-base font-medium text-white shadow-sm"
+                          className="flex w-full items-center justify-center rounded-md border border-transparent bg-light-400 hover:bg-light transition-all px-4 py-2 text-sm font-main text-white shadow-sm"
                         >
                           S'inscrire
                         </a>
              
-                          <a href="#" className="flex w-full items-center justify-center mt-4 rounded-md border border-transparent bg-light-400 hover:bg-light transition-all px-4 py-2 text-base font-medium text-white shadow-sm">
+                          <a href="#" className="flex w-full items-center justify-center mt-4 rounded-md border border-transparent bg-light-400 hover:bg-light transition-all px-4 py-2 text-sm font-main text-white shadow-sm">
                             Se connecter
                           </a>
                     

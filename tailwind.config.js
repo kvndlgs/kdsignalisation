@@ -35,11 +35,11 @@ module.exports = {
         },
       },
       fontFamily: {
-        'main': "'MonumentExtended-Regular', sans-serif",
-        'ultra': "'MonumentExtended-Ultrabold', sans-serif",
+        'main': "'RightGrotesk-Regular', sans-serif",
+        'ultra': "'RightGrotesk-Black', sans-serif",
       },
       fontSize: {
-        'sm': '12px',
+        'sm': '18px',
         'base': '18px',
         '1xl': '1.25rem',
         '2xl': '1.563rem',
