@@ -3,8 +3,8 @@ import * as Icon from 'react-icons/ri'
 export default function NestedLayout(){
     return (
         <div className='h-auto bg-white max-width-[1440px]'>
-        <section className='px-13 py-10 w-1/2 mx-auto h-auto pt-40 pb-40'>
-            <h2 className='text-3xl md:text-5xl font-black text-dark-400 pb-2'> NOUS GARANTIRONS LA SÉCURITÉ DE VOS CHANTIERS A TRAVERS LE QUEBEC. </h2>
+        <section className='lg:px-13 px-2 lg:py-10 py-2 lg:w-1/2 md:w-[80%] w-[90%] mx-auto h-auto pt-24 pb-24 lg:pt-36 lg:pb-36'>
+            <h2 className='text-4xl lg:text-5xl font-black text-light pb-2 tracking-wider'> NOUS GARANTIRONS LA SÉCURITÉ DE VOS CHANTIERS A TRAVERS LE QUEBEC. </h2>
             <p className='pb-10 font-semibold text-dark-300'> Clavarder avec l'un de nos expert et obtener votre soumission en quelques minutes.Cliquer sur la bulle-message ci-dessous pour debuter.</p>
             <a href='#' className='py-4 px-5 mt-44 bg-light-400 font-bold text-white rounded'> SOUMISSION RAPIDE </a>
             

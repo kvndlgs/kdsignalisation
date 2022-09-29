@@ -41,9 +41,9 @@ export default function Footer() {
               </div>
       
               <div class="col-span-2 pt-6 border-t sm:col-span-1 border-white/10">
-                <p class="font-bold text-dark-100">Nos services</p>
+                <p class="font-bold text-dark-300">Nos services</p>
       
-                <nav class="flex flex-col mt-6 space-y-4 text-sm text-dark-50">
+                <nav class="flex flex-col font-semibold mt-6 space-y-4 text-sm text-dark-50">
                   <a class="inline-block" href=""> Signalisation Routière </a>
                   <a class="inline-block" href=""> Véhicule d'accompagnement </a>
                   <a class="inline-block" href=""> Location d'équipements (bientot) </a>
@@ -51,7 +51,7 @@ export default function Footer() {
               </div>
       
               <div class="col-span-2 pt-6 border-t sm:col-span-1 border-white/10">
-                <p class="font-bold text-dark-100">L'entreprise</p>
+                <p class="font-bold text-dark-300">L'entreprise</p>
       
                 <nav class="flex flex-col mt-6 space-y-4 text-sm text-dark-50 font-semibold">
                   <a class="inline-block" href="/about"> Qui sommes-nous ? </a>
@@ -61,17 +61,16 @@ export default function Footer() {
               </div>
       
               <div class="col-span-2 pt-6 border-t sm:col-span-1 border-white/10">
-                <p class="font-bold text-dark-100">Liens utiles</p>
+                <p class="font-bold text-dark-300">Liens utiles</p>
       
                 <nav class="flex flex-col mt-6 space-y-4 text-sm text-dark-50 font-semibold">
                   <a class="inline-block" href="/contact"> Nous joindre </a>
                   <a class="inline-block" href="#"> FAQs </a>
-                  <a class="inline-block" href="#"> Clavarder </a>
                 </nav>
               </div>
       
               <div class="col-span-2 pt-6 border-t sm:col-span-1 border-white/10">
-                <p class="font-bold text-dark-100">Client</p>
+                <p class="font-bold text-dark-300">Client</p>
       
                 <nav class="flex flex-col mt-6 space-y-4 text-sm font-semibold text-dark-50">
                   <a class="inline-block" href="">Connexion</a>
@@ -101,12 +100,11 @@ export default function Footer() {
           </div>
       
           <div class="pt-8 mt-12 border-t border-white/10">
-            <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
-
-              <p class="text-xs text-center text-dark-200 font-semibold lg:text-left">
+            <div class="flex flex-col items-center justify-around">
+              <Logo className='mx-auto' fill='#887F94' size='26px' />
+              <p class="text-xs text-center text-dark-200 font-semibold mt-4">
                  &copy; 2022. KD Signalisation. Tout droits reserver
               </p>
-              <Logo fill='#887F94' size='32px' />
             </div>
           </div>
         </div>
