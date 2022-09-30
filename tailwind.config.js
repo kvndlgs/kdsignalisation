@@ -9,6 +9,7 @@ module.exports = {
       colors: {
         'dark': {
           DEFAULT: '#37333D',
+          '25': '#D8D3E0',
           '50': '#928A9D',
           '100': '#887F94',
           '200': '#736B80',
@@ -39,6 +40,7 @@ module.exports = {
         'ultra': "'RightGrotesk-Black', sans-serif",
       },
       fontSize: {
+        'xs': '14px',
         'sm': '18px',
         'base': '18px',
         '1xl': '1.25rem',

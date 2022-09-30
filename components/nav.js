@@ -24,10 +24,6 @@ export default function Navbar() {
 
          return (
           <>
-          <div className='w-full flex flex-row items-stretch justify-end  py-[4.5px] font-main text-sm text-white bg-dark-400 leading-tight'>
-            <a href='#'></a>
-            <a href='#' className='hover:text-light-50 mr-6 text-[12px] tracking-widest'>{ french ? 'FR' : 'EN' }</a>
-          </div>
             <Popover className="relative bg-dark">
               <div className="mx-auto max-w-[1440px] px-4 sm:px-6">
                 <div className="flex items-center justify-between  py-4 md:justify-start md:space-x-14">

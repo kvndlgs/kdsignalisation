@@ -14,7 +14,7 @@ export default function Footer() {
             >
               <div class="col-span-2">
                 <div>
-                  <h2 class="text-5xl font-ultra text-white leading-tight tracking-wide">Abonnez-vous à notre bulletin d'info!</h2>
+                  <h2 class="text-3xl font-ultra text-white leading-tight tracking-wide">Abonnez-vous à notre bulletin d'info!</h2>
                 </div>
               </div>
       
