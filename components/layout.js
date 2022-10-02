@@ -26,14 +26,7 @@ export default function Layout({ children, hasFooter, title }) {
                 <meta name="msapplication-TileColor" content="#00aba9" />
                 <meta name="theme-color" content="#ffffff" />
             </Head>
-            <Script
-             id='Adsense-id'
-             data-ad-client='ca-pub-2775225322691850'
-             async='true'
-             strategy='beforeInteractive'
-             src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-             crossorigin="anonymous"
-             />
+        
             <Navbar />
             <main>{children}</main>
             {hasFooter ?
@@ -51,6 +44,19 @@ export default function Layout({ children, hasFooter, title }) {
                       ga('send', 'pageview');
                 `}
             </Script>
+            <Script
+        src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-5539LBMLKX');
+        `}
+      </Script>
         </>
     )
 }

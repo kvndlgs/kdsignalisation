@@ -3,3 +3,6 @@ ID DE FLUX:4097985440
 ID DE MESURE: G-5539LBMLKX
 
 ID UA-243009363-1
+
+         async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2775225322691850"
+                         crossorigin="anonymous"

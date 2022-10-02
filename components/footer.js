@@ -5,8 +5,8 @@ export default function Footer() {
     return (
      
       
-      <footer class="bg-dark">
-        <div class="max-w-screen-xl pb-6 pt-0 px-6 mx-auto">
+      <footer class="bg-dark -mt-8">
+        <div class="max-w-screen-xl h-auto pb-6 px-6 mx-auto">
           <div class="lg:flex lg:gap-8">
       
             <div class="grid grid-cols-2 gap-8 mt-8 lg:mt-0 lg:grid-cols-5 lg:gap-y-16">
