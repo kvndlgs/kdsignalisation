@@ -9,6 +9,7 @@ import Footer from './footer'
 export default function Layout({ children, hasFooter, title }) {
     return (
         <>
+        
             <Head>
                 <title>KD SIGNALISATION | {title ? title : ""}</title>
                 <meta name="description" content="KD SIGNALISATION, Signalisation routière, Laurentides, Laneudière, Montréal,Laval, Mauricie Quebec,Outaouais, 
@@ -25,6 +26,13 @@ export default function Layout({ children, hasFooter, title }) {
                 <meta name="msapplication-TileColor" content="#00aba9" />
                 <meta name="theme-color" content="#ffffff" />
             </Head>
+            <Script
+             id='Adsense-id'
+             data-ad-client='ca-pub-2775225322691850'
+             async='true'
+             strategy='beforeInteractive'
+             src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+             />
             <Navbar />
             <main>{children}</main>
             {hasFooter ?
