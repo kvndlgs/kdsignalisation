@@ -20,12 +20,10 @@ function classNames(...classes) {
   }
 
 export default function Navbar() {
-  const [french, setFrench] = useState(false);
-
          return (
           <>
             <Popover className="relative bg-dark">
-              <div className="mx-auto max-w-[1440px] px-4 sm:px-6">
+           <div className="mx-auto max-w-screen-xl px-10 md:px-16">
                 <div className="flex items-center justify-between  py-4 md:justify-start md:space-x-14">
                   <div className="flex justify-start lg:w-0 lg:flex-1">
                     <a href="/">
@@ -46,7 +44,7 @@ export default function Navbar() {
                           <Popover.Button
                             className='text-white hover:text-dark-200 group inline-flex items-center text-sm'
                           >
-                            <span className='font-main text-sm'>Nos services</span>
+                            <span className='font-main text-sm focus:outline-none outline-none ring-none border-none'>Nos services</span>
                             <HiChevronDown
                             className='text-[24px] mx-1'
                               aria-hidden="true"

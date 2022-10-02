@@ -1,14 +1,17 @@
 import Layout from '../components/layout'
+import PageTitle from '../components/page-title'
+import Button from '../components/button'
 import * as Icon from 'react-icons/hi'
 
 export default function Contact(){
     return (
         <Layout hasFooter title='Nous joindre'>
-            <div className='w-full flex items-center justify-center pt-6 md:pt-14'>
-                <h1 className='text-5xl font-ultra text-dark-400 tracking-widesr'> Nous joindre </h1>
-            </div>
-            <div className='w-full pb-4 pt-4 md:py-20 min-h-full grid grid-cols-1 mx-auto md:grid-cols-2 justify-around items-center'>
-                <form className='grid grid-span-2 grid-cols-1 place-self-center gap-3 w-[90%] md:w-4/6 border-2 border-dark-300 md:px-10 py-4 px-4 md:py-10 rounded'>
+            <div className='max-w-screen-xl mx-auto'>
+            <PageTitle>
+                Nous joindre
+            </PageTitle>
+            <div className='w-full pb-20 min-h-full grid grid-cols-1 mx-auto md:grid-cols-2 justify-around items-center'>
+                <form className='grid grid-span-2 grid-cols-1 place-self-center gap-3 w-5/6 border-2 border-dark-300 md:px-10 py-5 px-5 md:py-10 rounded-lg'>
                     <input
                      type='text'
                      name='nom'
@@ -50,9 +53,9 @@ export default function Contact(){
 
                      </textarea>
 
-                     <button  className='w-full py-4 px-6 text-white bg-light-400 hover:bg-dark-25 rounded font-main text-sm'> Envoyer </button>
+                     <Button label='Envoyer' />
                 </form>
-                <div className='grid md:grid-cols-2 grid-cols-1 grid-rows-5 gap-0 md:grid-rows-3 md:grid-span-1 md:justify-start justify-center px-10 pt-9'>
+                <div className='grid md:grid-cols-2 grid-cols-1 grid-rows-5 gap-0 md:grid-rows-3 md:grid-span-1 md:justify-start justify-center px-10 py-9'>
                     <h4 className='py-2 font-ultra text-sm text-dark inline-flex items-stretch'>
                         <Icon.HiClock className='mr-3 -mt-1 text-3xl text-light' />Ouvert 24/7</h4>
                     <h4 className='py-2 font-ultra text-sm text-dark inline-flex items-stretch'>
@@ -71,6 +74,7 @@ export default function Contact(){
                      53 Boul Lajeunesse O, <br/> Saint-Jerome, <br/> Quebec, J7Y1W4 
                      </h4>
                 </div>
+            </div>
             </div>
         </Layout>
     )

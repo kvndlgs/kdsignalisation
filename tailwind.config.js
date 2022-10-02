@@ -37,19 +37,20 @@ module.exports = {
       },
       fontFamily: {
         'main': "'RightGrotesk-Regular', sans-serif",
+        'med': "'RightGrotesk-Medium', sans-serif",
         'ultra': "'RightGrotesk-Black', sans-serif",
       },
       fontSize: {
         'xs': '14px',
         'sm': '18px',
-        'base': '18px',
+        'base': '20px',
         '1xl': '1.25rem',
         '2xl': '1.563rem',
         '3xl': '1.953rem',
         '4xl': '2.441rem',
         '5xl': '3.052rem',
         '6xl': '3.815rem'
-      }
+      },
     },
   },
   plugins: [],
