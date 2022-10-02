@@ -32,6 +32,7 @@ export default function Layout({ children, hasFooter, title }) {
              async='true'
              strategy='beforeInteractive'
              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+             crossorigin="anonymous"
              />
             <Navbar />
             <main>{children}</main>
