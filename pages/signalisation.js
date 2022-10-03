@@ -16,12 +16,22 @@ export default function Signalisation(){
                 Signalisation routière
             </PageTitle>
             <p className='w-5/6 text-base font-main text-dark-200'>
-                La sécurité sur les chantiers routiers nous concernes tous. Les dangers pour les travailleurs autant que 
-                pour les usagés sont réel, nous en sommes conscient plus que jamais.
-                Chez KD SIGNALISATION, Il est instinctif de mettre le bien être des deux parties au premier plan. 
-                Nos signaleurs sont méticuleusement selectionné et ont recu une formation reconnue par le ministere 
-                des transports du Quebec.
+                Nos signaleurs routiers certifiers (AQTr) assurons une circulation fluide et sécuritaire sur vos chantiers. N'importe ou au Quebec, vous pouvez compter sur nous.
             </p>
+            <ul>
+                <li>
+                     Équipes de signaleurs disponible 24/7
+                </li>
+                <li>
+                    Camions barrières
+                </li>
+                <li>
+                    Véhicule d'accompagnement
+                </li>
+                <li>
+                    Surveillance de chantier
+                </li>
+            </ul>
             </section>
             <section section className='w-full h-auto bg-dark-25 pb-20'>
                 <div className='max-w-screen-xl mx-auto'>

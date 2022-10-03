@@ -5,7 +5,7 @@ export default function Footer() {
     return (
      
       
-      <footer class="bg-dark -mt-8">
+      <footer class="bg-dark -mt-8 md:mt-0">
         <div class="max-w-screen-xl h-auto pb-6 px-6 mx-auto">
           <div class="lg:flex lg:gap-8">
       
@@ -24,7 +24,7 @@ export default function Footer() {
                 <nav class="flex flex-col font-main mt-6 space-y-4 text-sm text-dark-50">
                   <a class="inline-block" href="/signalisation"> Signalisation Routière </a>
                   <a class="inline-block" href=""> Véhicule d'accompagnement </a>
-                  <a class="inline-block" href="/location"> Location d'équipements (bientot) </a>
+                  <a class="inline-block" href="/location"> Location d'équipements </a>
                 </nav>
               </div>
       
