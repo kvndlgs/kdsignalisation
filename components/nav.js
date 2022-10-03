@@ -22,7 +22,7 @@ function classNames(...classes) {
 export default function Navbar() {
          return (
           <>
-            <Popover className="relative bg-dark">
+            <Popover className="relative bg-dark z-10">
            <div className="mx-auto max-w-screen-xl px-10 md:px-16">
                 <div className="flex items-center justify-between  py-4 md:justify-start md:space-x-14">
                   <div className="flex justify-start lg:w-0 lg:flex-1">

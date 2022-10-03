@@ -8,9 +8,13 @@ export default function Contact(){
         <Layout hasFooter title='Nous joindre'>
             <div className='max-w-screen-xl mx-auto'>
             <PageTitle>
-                Des questions ? N'héstez pas a nous !
+                Nous joindre
             </PageTitle>
-            <p>Faites-nous part des détails de votre projet et un de nos expert communiqueras avec vous dans les plus bref délais. Ca urge ? Clavarder ou appellez nous au 1-888-URG-ENCE</p>
+            <div className='max-w-screen-xl mx-auto flex justify-center items-center pt-4 pb-8 px-14'>
+
+            
+            <p className='text-base text-dark font-main'>Faites-nous part des détails de votre projet et l'un de nos expert communiqueras avec vous dans les plus bref délais. Ca urge ? Clavarder ou appellez nous au 438-526-5465</p>
+            </div>
             <div className='w-full pb-20 min-h-full grid grid-cols-1 mx-auto md:grid-cols-2 justify-around items-center'>
                 <form className='grid grid-span-2 grid-cols-1 place-self-center gap-3 w-5/6 border-2 border-dark-300 md:px-10 py-5 px-5 md:py-10 rounded-lg'>
                     <input
