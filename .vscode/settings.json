@@ -1,0 +1,6 @@
+{
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.useInlineCompletions": true,
+    "tailwindCSS.emmetCompletions": true,
+    "editor.fontSize": 15
+}

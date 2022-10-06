@@ -15,7 +15,7 @@ export default function Signalisation(){
             <PageTitle>
                 Signalisation routière
             </PageTitle>
-            <p className='w-5/6 text-base font-main text-dark-200'>
+            <p className='w-5/6 text-base font-main text-darkgray'>
                 Nos signaleurs routiers certifiers (AQTr) assurons une circulation fluide et sécuritaire sur vos chantiers. N'importe ou au Quebec, vous pouvez compter sur nous.
             </p>
             <ul>

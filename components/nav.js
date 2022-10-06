@@ -4,15 +4,15 @@ import {HiChevronDown,  HiArrowsExpand, HiCalendar, HiChartBar, HiCursorClick, H
 import Logo from '../components/logo'
 
 const navigation = [
-    { name: 'À propos', href: '/about', current: false },
-    { name: 'Carrières', href: '/job', current: false },
+    { name: 'À propos', href: '/', current: false },
+    { name: 'Carrières', href: '/', current: false },
     { name: 'Nous joindre', href: '/contact', current: false },
 ]
 
 const mobileNavigation = [
-  { name: 'Nos services', href:'/services', current: false },
-  { name: 'À propos', href: '/about', current: false },
-  { name: 'Carrières', href: '/job', current: false },
+  { name: 'Nos services', href:'/', current: false },
+  { name: 'À propos', href: '/', current: false },
+  { name: 'Carrières', href: '/', current: false },
   { name: 'Nous joindre', href: '/contact', current: false },
 ]
 function classNames(...classes) {
@@ -22,13 +22,13 @@ function classNames(...classes) {
 export default function Navbar() {
          return (
           <>
-            <Popover className="relative bg-dark z-10">
+            <Popover className="relative bg-darkgray z-10">
            <div className="mx-auto max-w-screen-xl px-10 md:px-16">
                 <div className="flex items-center justify-between  py-4 md:justify-start md:space-x-14">
                   <div className="flex justify-start lg:w-0 lg:flex-1">
                     <a href="/">
-                      <span className="sr-only">KD Signalisation</span>
-                      <Logo className='outline-none ring-none'/>
+                      <span className="sr-only">KD signalisation</span>
+                      <Logo className='outline-none ring-none' />
                     </a>
                   </div>
                   <div className="-my-2 -mr-2 md:hidden">
@@ -44,7 +44,7 @@ export default function Navbar() {
                           <Popover.Button
                             className='text-white hover:text-dark-200 group inline-flex items-center text-sm'
                           >
-                            <span className='font-main text-sm focus:outline-none outline-none ring-none border-none'>Nos services</span>
+                            <span className='font-three text-sm focus:outline-none outline-none ring-none border-none'>Nos services</span>
                             <HiChevronDown
                             className='text-[24px] mx-1'
                               aria-hidden="true"
@@ -62,18 +62,18 @@ export default function Navbar() {
                           >
                             <Popover.Panel className="absolute z-10 -ml-4 mt-4 w-screen max-w-[330px] transform px-2 sm:px-0 lg:left-1/2 lg:ml-0 lg:-translate-x-[50%]">
                               <div className="overflow-hidden shadow-lg">
-                                <div className=" text-white  font-main text-sm bg-dark hover:bg-dark-400 transition-all tracking-wider rounded-t-md grid items-center justify-center gap-6 px-4 py-0 mt-4 sm:gap-8 sm:p-2">
-                                <a href='/signalisation' className='space-y-6 px-5 py-5 sm:flex sm:space-y-0 sm:space-x-8'>
+                                <div className=" text-white  font-three text-sm bg-darkgray hover:bg-dark-400 transition-all tracking-wider rounded-t-md grid items-center justify-center gap-6 px-4 py-0 mt-4 sm:gap-8 sm:p-2">
+                                <a href='/' className='space-y-6 px-5 py-5 sm:flex sm:space-y-0 sm:space-x-8'>
                                 Signalisation routière
                                 </a>
                                 </div>
-                                <div className="relative text-white font-main text-sm tracking-wider bg-dark hover:bg-dark-400 transition-all items-center justify-center  grid gap-6 px-5 py-0  border-b-2 border-t-2 border-dark-50 sm:gap-8 sm:p-2">
-                                <a href='#' className='space-y-6 px-5 py-5 sm:flex sm:space-y-0 sm:space-x-8'>
+                                <div className="relative text-white font-three text-sm tracking-wider bg-dark hover:bg-dark-400 transition-all items-center justify-center  grid gap-6 px-5 py-0  border-b-2 border-t-2 border-dark-50 sm:gap-8 sm:p-2">
+                                <a href='/' className='space-y-6 px-5 py-5 sm:flex sm:space-y-0 sm:space-x-8'>
                                 Véhicule d'accompanement
                                 </a>
                                 </div>
-                                <div className="relative text-white font-main text-sm bg-dark hover:bg-dark-400 transition-all tracking-wider rounded-b-md items-center justify-center  grid gap-6 px-5 py-0 sm:gap-8 sm:p-2">
-                                <a href='/location' className='space-y-6 px-5 py-5 sm:flex sm:space-y-0 sm:space-x-8'>
+                                <div className="relative text-white font-three text-sm bg-dark hover:bg-dark-400 transition-all tracking-wider rounded-b-md items-center justify-center  grid gap-6 px-5 py-0 sm:gap-8 sm:p-2">
+                                <a href='/' className='space-y-6 px-5 py-5 sm:flex sm:space-y-0 sm:space-x-8'>
                                 Location d'équipements
                                 </a>
                                 </div>
@@ -87,7 +87,7 @@ export default function Navbar() {
                     {
                       navigation.map((item) => {
                         return (
-                          <a className=' text-white hover:text-dark-200 font-main text-sm transition-all flex items-center justify-center' href={item.href} key={item}> {item.name} </a>
+                          <a className=' text-white hover:text-dark-200 font-three text-sm transition-all flex items-center justify-center' href={item.href} key={item}> {item.name} </a>
                         )
                       })
                     }
@@ -98,12 +98,12 @@ export default function Navbar() {
                       href="#"
                       className=" inline-flex items-center justify-center whitespace-nowrap rounded border 
                       border-transparent text-sm bg-light-400 hover:bg-light transition-all px-5 py-4
-                      font-main tracking-wider
+                      font-two tracking-wider
                       text-white shadow-sm"
                     >
                       Se connecter
                     </a>
-                    <a href='#' className='text-white px-8 font-main text-sm'> S'inscrire </a>
+                    <a href='#' className='text-white px-8 font-three text-sm'> S'inscrire </a>
                   </div>
                 </div>
               </div>
@@ -137,7 +137,7 @@ export default function Navbar() {
                       <div className="grid grid-cols-2 gap-y-4 gap-x-15 text-white ">
                         { mobileNavigation.map((item)=> {
                             return (
-                                <a className='p-4 font-main text-sm text-white hover:text-dark-200 transition-all' href={item.href}
+                                <a className='p-4 font-three text-sm text-white hover:text-dark-200 transition-all' href={item.href}
                                    key={item}
                                    >{item.name}</a>
                             )
@@ -146,12 +146,12 @@ export default function Navbar() {
                       <div className='pt-6 border-t-2 border-dark-200'>
                         <a
                           href="#"
-                          className="flex w-full items-center justify-center rounded-md border border-transparent bg-light-400 hover:bg-light transition-all px-4 py-2 text-sm font-main text-white shadow-sm"
+                          className="flex w-full items-center justify-center rounded-md border border-transparent bg-light-400 hover:bg-light transition-all px-4 py-2 text-sm font-two text-white shadow-sm"
                         >
                           S'inscrire
                         </a>
              
-                          <a href="#" className="flex w-full items-center justify-center mt-4 rounded-md border border-transparent bg-light-400 hover:bg-light transition-all px-4 py-2 text-sm font-main text-white shadow-sm">
+                          <a href="#" className="flex w-full items-center justify-center mt-4 rounded-md border border-transparent bg-light-400 hover:bg-light transition-all px-4 py-2 text-sm font-two text-white shadow-sm">
                             Se connecter
                           </a>
                     

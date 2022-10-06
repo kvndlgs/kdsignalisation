@@ -1,40 +1,27 @@
 import * as Icon from 'react-icons/ri'
 import Button from '../components/button'
+import Image from 'next/image'
 
 
 export default function NestedLayout(){
     return (
-
-        <div>
-        <div className='relative overflow-hidden bg-white py-10'>
-       <main className="mx-auto max-w-1/2 px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
-            <div className="sm:text-center lg:text-left">
-              <h1 className="font-ultra tracking-tight text-dark text-4xl md:text-5xl">
-                 La signalisation routière <br/> c'est notre affaire !
-              </h1>
-              <p className="mt-3 text-main text-dark-300 sm:mx-auto sm:mt-5 sm:max-w-screen-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
-                Nous assurons la sécurité de vos chantiers a travers le Québec.
-              </p>
-              <div className="mt-5 sm:mt-8 inline-flex items-start justify-center">
-                <div className="rounded-md pb-8">
-                  <a
-                    href="/services"
-                    className="flex w-full items-center justify-center rounded-md  bg-light border-2 border-light px-8 py-3 text-base font-medium text-white hover:bg-light-300 md:py-4 md:px-10 md:text-lg"
-                  >
-                    Nos services
-                  </a>
-                </div>
-              </div>
-            </div>
-          </main>
+      <section id='hero'>
+        <div className='flex flex-col-reverse max-w-screen-xl md:flex-row items-center justify-center px-14 mx-auto my-20 space-y-0 md:space-y-0'>
+          <div className="flex flex-col md:w-1/2">
+            <h1 className="md:max-w-3/4 leading-tight text-tusk-700 text-4xl font-one text-center md:text-6xl md:text-left">
+             LES EXPERTS DE LA SIGNALISATION ROUTIÈRE.
+            </h1>
+            <p className="max-w-md font-two text-1xl text-center pt-0 mt-0 text-darkgray md:text-left">
+               
+            </p>
+            <a href="/" className="py-5 px-6 flex mt-14 w-1/2  mx-auto md:mx-0 items-center justify-center text-thunder-100 bg-tusk-700 font-two text-1xl rounded-md baseline hover:bg-tusk">
+              Nos services
+            </a>
+          </div>
+          <div className='md:w-1/2'>
+            <img src="/images/arrow1.gif" alt="signalisation" />
+          </div>
         </div>
-      <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-        <img
-          className="h-screen-md w-full object-cover sm:h-72 md:h-96 lg:hidden lg:w-full md:mt-0  sm:mt-0 lg:mt-[79.37px]"
-          src="/images/bgroad.jpg"
-          alt=""
-        />
-      </div>
-        </div>
+      </section>
     )
 }
