@@ -21,7 +21,7 @@ export default function Footer() {
               </div>
       
               <div class="col-span-2 pt-6 border-t sm:col-span-1 border-dark-25/10">
-              <p class="font-three text-2xl text-thunder-200"><TbBarrierBlock /></p>
+              <p class="font-three text-2xl text-thunder-200 inline-flex items-center"><TbBarrierBlock className='mr-2' />  Services </p>
       
                 <nav class="flex flex-col font-three mt-6 space-y-4 text-sm text-thunder-50">
                   <a class="inline-block" href="/signalisation"> Signalisation Routière </a>
@@ -31,17 +31,17 @@ export default function Footer() {
               </div>
       
               <div class="col-span-2 pt-6 border-t sm:col-span-1 border-dark-25/10">
-                <p class="font-three text-2xl text-thunder-200"><TbBuilding /></p>
+                <p class="font-three text-2xl text-thunder-200 inline-flex items-center"><TbBuilding className='mr-2' /> L'entreprise</p>
       
                 <nav class="flex flex-col mt-6 space-y-4 text-sm text-thunder-50 font-three">
                   <a class="inline-block" href="/about"> Qui sommes-nous ? </a>
                   <a class="inline-block" href="/about"> L'équipe </a>
-                  <a class="inline-block" href="/job"> Carrière </a>
+                  <a class="inline-block" href="/job"> Carrières </a>
                 </nav>
               </div>
       
               <div class="col-span-2 pt-6 border-t sm:col-span-1 border-dark-25/10">
-                <p class="font-three text-2xl text-thunder-200"><TbHeart /></p>
+                <p class="font-three text-2xl text-thunder-200 inline-flex items-center"><TbHeart className='mr-2' /> Liens utiles</p>
       
                 <nav class="flex flex-col mt-6 space-y-4 text-sm text-thunder-50 font-three">
                   <a class="inline-block" href="/contact"> Nous joindre </a>
@@ -50,7 +50,7 @@ export default function Footer() {
               </div>
       
               <div class="col-span-2 pt-6 border-t sm:col-span-1 border-dark-25/10">
-                <p class="font-three text-2xl text-thunder-200"><TbUser /></p>
+                <p class="font-three text-2xl text-thunder-200 inline-flex items-center"><TbUser className='mr-2' /> Client</p>
       
                 <nav class="flex flex-col mt-6 space-y-4 text-sm font-three text-thunder-50">
                   <a class="inline-block" href="">Connexion</a>

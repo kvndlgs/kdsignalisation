@@ -18,7 +18,7 @@ export default function NestedLayout(){
             M'EN COLICE
             </a>
           </div>
-          <div className='w-full h-[100%] -ml-46'>
+          <div className='h-[100] pb-8 md:pb-0'>
             <img src="/images/retardos.png" alt="signalisation" />
           </div>
         </div>
