@@ -22,7 +22,7 @@ function classNames(...classes) {
 export default function Navbar() {
          return (
           <>
-            <Popover className="relative bg-darkgray z-10">
+            <Popover className="relative bg-thunder z-10">
            <div className="mx-auto max-w-screen-xl px-10 md:px-16">
                 <div className="flex items-center justify-between  py-4 md:justify-start md:space-x-14">
                   <div className="flex justify-start lg:w-0 lg:flex-1">
@@ -32,7 +32,7 @@ export default function Navbar() {
                     </a>
                   </div>
                   <div className="-my-2 -mr-2 md:hidden">
-                    <Popover.Button className="inline-flex items-center justify-center p-2 text-white hover:text-dark-200 transition-all focus:outline-none outline-none">
+                    <Popover.Button className="inline-flex items-center justify-center p-2 text-white hover:text-thunder-200 transition-all focus:outline-none outline-none">
                       <span className="sr-only">Open menu</span>
                       <HiMenu className="h-8 w-8" aria-hidden="true" />
                     </Popover.Button>
@@ -42,7 +42,7 @@ export default function Navbar() {
                       {({ open }) => (
                         <>
                           <Popover.Button
-                            className='text-white hover:text-dark-200 group inline-flex items-center text-sm'
+                            className='text-white hover:text-thunder-200 group inline-flex items-center text-sm'
                           >
                             <span className='font-three text-sm focus:outline-none outline-none ring-none border-none'>Nos services</span>
                             <HiChevronDown
@@ -62,17 +62,17 @@ export default function Navbar() {
                           >
                             <Popover.Panel className="absolute z-10 -ml-4 mt-4 w-screen max-w-[330px] transform px-2 sm:px-0 lg:left-1/2 lg:ml-0 lg:-translate-x-[50%]">
                               <div className="overflow-hidden shadow-lg">
-                                <div className=" text-white  font-three text-sm bg-darkgray hover:bg-dark-400 transition-all tracking-wider rounded-t-md grid items-center justify-center gap-6 px-4 py-0 mt-4 sm:gap-8 sm:p-2">
+                                <div className=" text-white  font-three text-sm bg-thunder hover:bg-thunder-400 transition-all tracking-wider rounded-t-md grid items-center justify-center gap-6 px-4 py-0 mt-4 sm:gap-8 sm:p-2">
                                 <a href='/' className='space-y-6 px-5 py-5 sm:flex sm:space-y-0 sm:space-x-8'>
                                 Signalisation routière
                                 </a>
                                 </div>
-                                <div className="relative text-white font-three text-sm tracking-wider bg-dark hover:bg-dark-400 transition-all items-center justify-center  grid gap-6 px-5 py-0  border-b-2 border-t-2 border-dark-50 sm:gap-8 sm:p-2">
+                                <div className="relative text-white font-three text-sm tracking-wider bg-thunder hover:bg-thunder-400 transition-all items-center justify-center  grid gap-6 px-5 py-0  border-b-2 border-t-2 border-dark-50 sm:gap-8 sm:p-2">
                                 <a href='/' className='space-y-6 px-5 py-5 sm:flex sm:space-y-0 sm:space-x-8'>
                                 Véhicule d'accompanement
                                 </a>
                                 </div>
-                                <div className="relative text-white font-three text-sm bg-dark hover:bg-dark-400 transition-all tracking-wider rounded-b-md items-center justify-center  grid gap-6 px-5 py-0 sm:gap-8 sm:p-2">
+                                <div className="relative text-white font-three text-sm bg-thunder hover:bg-thunder-400 transition-all tracking-wider rounded-b-md items-center justify-center  grid gap-6 px-5 py-0 sm:gap-8 sm:p-2">
                                 <a href='/' className='space-y-6 px-5 py-5 sm:flex sm:space-y-0 sm:space-x-8'>
                                 Location d'équipements
                                 </a>
@@ -87,7 +87,7 @@ export default function Navbar() {
                     {
                       navigation.map((item) => {
                         return (
-                          <a className=' text-white hover:text-dark-200 font-three text-sm transition-all flex items-center justify-center' href={item.href} key={item}> {item.name} </a>
+                          <a className=' text-white hover:text-thunder-200 font-three text-sm transition-all flex items-center justify-center' href={item.href} key={item}> {item.name} </a>
                         )
                       })
                     }
@@ -97,7 +97,7 @@ export default function Navbar() {
                     <a
                       href="#"
                       className=" inline-flex items-center justify-center whitespace-nowrap rounded border 
-                      border-transparent text-sm bg-light-400 hover:bg-light transition-all px-5 py-4
+                      border-transparent text-sm bg-thunder hover:thunder-300 transition-all px-5 py-4
                       font-two tracking-wider
                       text-white shadow-sm"
                     >
@@ -118,14 +118,14 @@ export default function Navbar() {
                 leaveTo="opacity-0 scale-95"
               >
                 <Popover.Panel focus className="absolute inset-x-0 top-0 origin-top-right transform transition md:hidden">
-                  <div className="divide-y-2 divide-dark-200 bg-dark shadow-lg">
-                    <div className="px-5 pt-5 pb-6">
+                  <div className="divide-y-2 divide-thunder-200 bg-thunder shadow-lg">
+                    <div className="px-10 pt-5 pb-6">
                       <div className="flex items-center justify-between">
                         <a href='/'>
                           <Logo className='outline-none ring-none' />
                         </a>
                         <div className="-mr-2">
-                          <Popover.Button className="inline-flex items-center justify-center rounded-md p-2 text-dark-50  hover:text-dark-200 outline-none">
+                          <Popover.Button className="inline-flex items-center justify-center rounded-md p-2 text-thunder-50  hover:text-dark-200 outline-none">
                             <span className="sr-only">Close menu</span>
                             <HiX className="h-6 w-6" aria-hidden="true" />
                           </Popover.Button>

@@ -7,71 +7,71 @@ export default function Footer() {
     return (
      
       
-      <footer class="bg-darkgray -mt-8 md:mt-0">
-        <div class="max-w-screen-xl h-auto pb-6 px-14 mx-auto">
-          <div class="lg:flex lg:gap-8">
+      <footer className="bg-thunder-600 -mt-8 md:mt-0">
+        <div className="max-w-screen-xl h-auto pb-6 px-14 mx-auto">
+          <div className="lg:flex lg:gap-8">
       
-            <div class="grid grid-cols-2 gap-8 mt-8 lg:mt-0 lg:grid-cols-5 lg:gap-y-16">
-              <div class="col-span-2 text-center md:text-left">
+            <div className="grid grid-cols-2 gap-8 mt-8 lg:mt-0 lg:grid-cols-5 lg:gap-y-16">
+              <div className="col-span-2 text-center md:text-left">
 
               </div>
       
-              <div class="col-span-2 lg:col-span-3 lg:flex lg:items-end">
+              <div className="col-span-2 lg:col-span-3 lg:flex lg:items-end">
 
               </div>
       
-              <div class="col-span-2 pt-6 border-t sm:col-span-1 border-dark-25/10">
-              <p class="font-three text-2xl text-thunder-200 inline-flex items-center"><TbBarrierBlock className='mr-2' />  Services </p>
+              <div className="col-span-2 pt-6 border-t sm:col-span-1 border-dark-25/10">
+              <p className="font-three text-2xl text-thunder-50 inline-flex items-center"><TbBarrierBlock className='mr-2' />  Services </p>
       
-                <nav class="flex flex-col font-three mt-6 space-y-4 text-sm text-thunder-50">
-                  <a class="inline-block" href="/signalisation"> Signalisation Routière </a>
-                  <a class="inline-block" href=""> Véhicule d'accompagnement </a>
-                  <a class="inline-block" href="/location"> Location d'équipements </a>
+                <nav className="flex flex-col font-three mt-6 space-y-4 text-sm text-thunder-25">
+                  <a className="inline-block" href="/signalisation"> Signalisation Routière </a>
+                  <a className="inline-block" href="/"> Véhicule d'accompagnement </a>
+                  <a className="inline-block" href="/location"> Location d'équipements </a>
                 </nav>
               </div>
       
-              <div class="col-span-2 pt-6 border-t sm:col-span-1 border-dark-25/10">
-                <p class="font-three text-2xl text-thunder-200 inline-flex items-center"><TbBuilding className='mr-2' /> L'entreprise</p>
+              <div className="col-span-2 pt-6 border-t sm:col-span-1 border-dark-25/10">
+                <p className="font-three text-qxl text-thunder-50 inline-flex items-center"><TbBuilding className='mr-2' /> L'entreprise</p>
       
-                <nav class="flex flex-col mt-6 space-y-4 text-sm text-thunder-50 font-three">
-                  <a class="inline-block" href="/about"> Qui sommes-nous ? </a>
-                  <a class="inline-block" href="/about"> L'équipe </a>
-                  <a class="inline-block" href="/job"> Carrières </a>
+                <nav className="flex flex-col mt-6 space-y-4 text-sm text-thunder-25 font-three">
+                  <a className="inline-block" href="/about"> Qui sommes-nous ? </a>
+                  <a className="inline-block" href="/about"> L'équipe </a>
+                  <a className="inline-block" href="/job"> Carrières </a>
                 </nav>
               </div>
       
-              <div class="col-span-2 pt-6 border-t sm:col-span-1 border-dark-25/10">
-                <p class="font-three text-2xl text-thunder-200 inline-flex items-center"><TbHeart className='mr-2' /> Liens utiles</p>
+              <div className="col-span-2 pt-6 border-t sm:col-span-1 border-dark-25/10">
+                <p className="font-three text-1xl text-thunder-50 inline-flex items-center"><TbHeart className='mr-2' /> Liens utiles</p>
       
-                <nav class="flex flex-col mt-6 space-y-4 text-sm text-thunder-50 font-three">
-                  <a class="inline-block" href="/contact"> Nous joindre </a>
-                  <a class="inline-block" href="#"> FAQs </a>
+                <nav className="flex flex-col mt-6 space-y-4 text-sm text-thunder-25 font-three">
+                  <a className="inline-block" href="/contact"> Nous joindre </a>
+                  <a className="inline-block" href="#"> FAQs </a>
                 </nav>
               </div>
       
-              <div class="col-span-2 pt-6 border-t sm:col-span-1 border-dark-25/10">
-                <p class="font-three text-2xl text-thunder-200 inline-flex items-center"><TbUser className='mr-2' /> Client</p>
+              <div className="col-span-2 pt-6 border-t sm:col-span-1 border-dark-25/10">
+                <p className="font-three text-1xl text-thunder-50 inline-flex items-center"><TbUser className='mr-2' /> Client</p>
       
-                <nav class="flex flex-col mt-6 space-y-4 text-sm font-three text-thunder-50">
-                  <a class="inline-block" href="">Connexion</a>
-                  <a class="inline-block" href="">Inscription</a>
+                <nav className="flex flex-col mt-6 space-y-4 text-sm font-three text-thunder-25">
+                  <a className="inline-block" href="">Connexion</a>
+                  <a className="inline-block" href="">Inscription</a>
                 </nav>
               </div>
       
-              <div class="flex col-span-2 gap-5 text-dark-100 lg:col-span-5">
-                <a class="hover:opacity-75" href="https://www.facebook.com/profile.php?id=100086453343364" target="_blank" rel="noreferrer">
-                  <span class="sr-only"> Facebook </span>
+              <div className="flex col-span-2 gap-5 text-dark-100 lg:col-span-5">
+                <a className="hover:opacity-75" href="https://www.facebook.com/profile.php?id=100086453343364" target="_blank" rel="noreferrer">
+                  <span className="sr-only"> Facebook </span>
                   <Icon.RiFacebookCircleFill className='text-2xl' />
                 </a>
       
-                <a class="hover:opacity-75" href="#" target="_blank" rel="noreferrer">
-                  <span class="sr-only"> Linkedin </span>
+                <a className="hover:opacity-75" href="#" target="_blank" rel="noreferrer">
+                  <span className="sr-only"> Linkedin </span>
       
                  <Icon.RiLinkedinFill  className='text-2xl' />
                 </a>
       
-                <a class="hover:opacity-75" href="#" target="_blank" rel="noreferrer">
-                  <span class="sr-only"> Twitter </span>
+                <a className="hover:opacity-75" href="#" target="_blank" rel="noreferrer">
+                  <span className="sr-only"> Twitter </span>
                   <Icon.RiTwitterFill className='text-2xl' />
                 </a>
       
@@ -79,10 +79,10 @@ export default function Footer() {
             </div>
           </div>
       
-          <div class="pt-8 mt-12 border-t border-dark-25/10">
-            <div class="flex flex-col items-center justify-around">
+          <div className="pt-8 mt-12 border-t border-dark-25/10">
+            <div className="flex flex-col items-center justify-around">
               <Logo className='mx-auto' fill='#887F94' size='28px' />
-              <p class="text-center text-thunder-200 text-xs font-normal mt-4">
+              <p className="text-center text-thunder-25 text-xs font-normal mt-4">
                  &copy; 2022. KD Signalisation. Tout droits reserver
               </p>
             </div>
