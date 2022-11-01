@@ -6,10 +6,11 @@ export default function Page(){
   return {}
 }
 
-Page.getLayout = function getLayout(page){
+Page.getLayout = function getLayout(page){/*
   return (
     <Layout title='Accueil'>
       <NestedLayout> {page} </NestedLayout>
+    
     </Layout>
   )
-}
+*/}
